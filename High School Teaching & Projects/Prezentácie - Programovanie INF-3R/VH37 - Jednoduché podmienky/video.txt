@@ -1,0 +1,8 @@
+- Python Booleans @ Socratica with Ulka Simone Mohanty
+https://youtu.be/9OK32jb_TdI
+
+- If Statement @ Python 3 Programming Tutorial with Sentdex
+https://youtu.be/4u2ClNCtcgY
+
+- If Else @ Python 3 Programming Tutorial with Sentdex
+https://youtu.be/qf0sfRZ0hHc

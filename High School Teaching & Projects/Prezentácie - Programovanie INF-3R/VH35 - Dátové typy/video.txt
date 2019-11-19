@@ -1,0 +1,11 @@
+- Python Strings @ Socratica with Ulka Simone Mohanty
+https://youtu.be/iAzShkKzpJo
+
+- Convert a String to Integer @ Python For Beginners by ImzTech
+https://youtu.be/XhI8qJJaNrY
+
+- Numbers in Python @ Socratica with Ulka Simone Mohanty
+https://youtu.be/_87ASgggEg0
+
+- Arithmetics in Python @ Socratica with Ulka Simone Mohanty
+https://youtu.be/Aj8FQRIHJSc

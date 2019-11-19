@@ -1,0 +1,7 @@
+v 1.03:
+- opravený pád servera pri nefunkčnosti sieťového pripojenia
+v 1.02:
+- pridaný súbor README.txt (návod na zobrazenie v prehliadači po reštarte systému)
+- pridaný CSS zoom
+v 1.01:
+- opravený pád programu pri zobrazení prázdneho suplovania (cez víkend)

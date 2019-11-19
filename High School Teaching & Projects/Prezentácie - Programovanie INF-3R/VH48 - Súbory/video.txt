@@ -1,0 +1,5 @@
+﻿- Writing to a File @ Python 3 Programming Tutorial with Sentdex
+https://youtu.be/f6zeuk5UjuE
+
+- Read from a File @ Python 3 Programming Tutorial with Sentdex
+https://youtu.be/0SyyGIFnVCA

@@ -1,0 +1,21 @@
+<script>
+  function swap(card){
+    // https://cs.wikipedia.org/wiki/Rub_a_líc
+    var lic = card.getAttribute("src"); 
+    var rub = card.getAttribute("alt");
+    // prehodenie obrazkov
+    if (rub==lic)
+        card.setAttribute("src", "cards/cardBack_blue1.png");
+    else
+        card.setAttribute("src", rub);
+  }
+</script>
+
+
+<!-- Zobrazme niekolko obrazkov. Pouzime fintu, kde si v atribute alt ulozime cestu k obrazku -->
+<img onclick="swap(this)" src="cards/cardSpadesK.png" alt="cards/cardSpadesK.png">
+<img onclick="swap(this)" src="cards/cardDiamondsK.png" alt="cards/cardDiamondsK.png">
+<img onclick="swap(this)" src="cards/cardSpadesA.png" alt="cards/cardSpadesA.png">
+<img onclick="swap(this)" src="cards/cardSpadesK.png" alt="cards/cardSpadesK.png">
+<img onclick="swap(this)" src="cards/cardDiamondsK.png" alt="cards/cardDiamondsK.png">
+<img onclick="swap(this)" src="cards/cardSpadesA.png" alt="cards/cardSpadesA.png">

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  
+  <!-- defer the script to start after the page has loaded -->
+  <script defer>
+  
+    // wait ms milliseconds
+    function sleep(ms)
+    {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    // asynchronous animate (not blocking browser control)
+    async function animate()
+    {
+        var i=0;
+        var path= "";
+        while (true)
+        {
+            for (i=0;i<8;i++)
+            {
+                await sleep(100);
+                path = "bird/vtak" + i +".png";
+                document.getElementById("info").innerHTML = path;
+                document.getElementById("animation").src = path;
+            }
+        }
+    }
+
+    // begin animation
+    animate();
+    
+  </script>
+</head>
+
+<body>
+  <img id="animation" src="bird/vtak0.png">
+  <p id="info"></p>
+</body>
+
+</html> 

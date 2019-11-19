@@ -1,0 +1,15 @@
+﻿2/2b - načítanie vstupov
+2/2b - konverzia na číslo
+4/4b - výpočet a podmienka
+2/2b - hlavná vetva
+2/2b - vedľajšia vetva
+--------
+spolu - 12b
+známka - 1
+--------
+Stupnica:
+1: 12-10
+2: 9-8
+3: 7-6
+4: 5-4
+5: 3-0

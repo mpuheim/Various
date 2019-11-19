@@ -1,0 +1,20 @@
+C:\Users\Michal\Desktop\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\bin\Debug\Zadanie_ZNS_Kohonen.exe
+C:\Users\Michal\Desktop\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\bin\Debug\Zadanie_ZNS_Kohonen.pdb
+C:\Users\Michal\Desktop\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Michal\Desktop\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Debug\Zadanie_ZNS_Kohonen.Form1.resources
+C:\Users\Michal\Desktop\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Debug\Zadanie_ZNS_Kohonen.Properties.Resources.resources
+C:\Users\Michal\Desktop\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Michal\Desktop\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Michal\Desktop\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Debug\Zadanie_ZNS_Kohonen.exe
+C:\Users\Michal\Desktop\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Debug\Zadanie_ZNS_Kohonen.pdb
+C:\Users\Michal\Desktop\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Debug\Zadanie_ZNS_Kohonen.exe
+C:\Users\Michal\Desktop\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Debug\Zadanie_ZNS_Kohonen.pdb
+C:\Users\Michal\Desktop\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\bin\Debug\Zadanie_ZNS_Kohonen.exe
+C:\Users\Michal\Desktop\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\bin\Debug\Zadanie_ZNS_Kohonen.pdb
+C:\Users\Michal\Desktop\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Michal\Desktop\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Debug\Zadanie_ZNS_Kohonen.Form1.resources
+C:\Users\Michal\Desktop\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Debug\Zadanie_ZNS_Kohonen.Properties.Resources.resources
+C:\Users\Michal\Desktop\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Michal\Desktop\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Data\Dokumenty\TUKE\5. Sem\Základy neurónových sietí\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Debug\Zadanie_ZNS_Kohonen.exe
+E:\Data\Dokumenty\TUKE\5. Sem\Základy neurónových sietí\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Debug\Zadanie_ZNS_Kohonen.pdb

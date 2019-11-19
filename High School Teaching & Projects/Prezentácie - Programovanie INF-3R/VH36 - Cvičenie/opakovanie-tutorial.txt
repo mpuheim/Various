@@ -1,0 +1,2 @@
+Module 1: Basic Concepts:
+- https://www.sololearn.com/Course/Python/

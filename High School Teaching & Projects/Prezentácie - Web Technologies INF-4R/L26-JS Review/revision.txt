@@ -1,0 +1,8 @@
+Trial Tests:
+- https://www.w3schools.com/js/js_quiz.asp
+- http://www.tutorialsteacher.com/online-test/javascript-test
+- https://www.pluralsight.com/ 
+
+Allowed Cheatsheets:
+- https://html-css-js.com/
+- https://htmlcheatsheet.com/js/

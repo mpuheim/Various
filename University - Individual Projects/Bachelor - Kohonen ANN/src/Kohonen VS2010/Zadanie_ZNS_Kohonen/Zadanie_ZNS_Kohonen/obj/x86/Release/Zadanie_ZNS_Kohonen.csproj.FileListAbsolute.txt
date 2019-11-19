@@ -1,0 +1,11 @@
+E:\Data\Dokumenty\TUKE\5. Sem\Základy neurónových sietí\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\bin\Release\Zadanie_ZNS_Kohonen.exe
+E:\Data\Dokumenty\TUKE\5. Sem\Základy neurónových sietí\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\bin\Release\Zadanie_ZNS_Kohonen.pdb
+E:\Data\Dokumenty\TUKE\5. Sem\Základy neurónových sietí\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Release\ResolveAssemblyReference.cache
+E:\Data\Dokumenty\TUKE\5. Sem\Základy neurónových sietí\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Release\Zadanie_ZNS_Kohonen.Form1.resources
+E:\Data\Dokumenty\TUKE\5. Sem\Základy neurónových sietí\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Release\Zadanie_ZNS_Kohonen.Properties.Resources.resources
+E:\Data\Dokumenty\TUKE\5. Sem\Základy neurónových sietí\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Release\GenerateResource.read.1.tlog
+E:\Data\Dokumenty\TUKE\5. Sem\Základy neurónových sietí\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Release\GenerateResource.write.1.tlog
+E:\Data\Dokumenty\TUKE\5. Sem\Základy neurónových sietí\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Release\Zadanie_ZNS_Kohonen.exe
+E:\Data\Dokumenty\TUKE\5. Sem\Základy neurónových sietí\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Release\Zadanie_ZNS_Kohonen.pdb
+E:\Data\Documents\TUKE\BC - 5. Sem\Základy neurónových sietí\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Release\Zadanie_ZNS_Kohonen.exe
+E:\Data\Documents\TUKE\BC - 5. Sem\Základy neurónových sietí\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x86\Release\Zadanie_ZNS_Kohonen.pdb

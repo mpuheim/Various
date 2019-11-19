@@ -1,0 +1,9 @@
+C:\Users\Michal\Desktop\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\bin\x64\Release\Zadanie_ZNS_Kohonen.exe
+C:\Users\Michal\Desktop\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\bin\x64\Release\Zadanie_ZNS_Kohonen.pdb
+C:\Users\Michal\Desktop\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x64\Release\ResolveAssemblyReference.cache
+C:\Users\Michal\Desktop\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x64\Release\Zadanie_ZNS_Kohonen.Form1.resources
+C:\Users\Michal\Desktop\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x64\Release\Zadanie_ZNS_Kohonen.Properties.Resources.resources
+C:\Users\Michal\Desktop\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x64\Release\GenerateResource.read.1.tlog
+C:\Users\Michal\Desktop\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x64\Release\GenerateResource.write.1.tlog
+C:\Users\Michal\Desktop\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x64\Release\Zadanie_ZNS_Kohonen.exe
+C:\Users\Michal\Desktop\Zadanie - Kohonen\2. Zdrojové súbory\Kohonen VS2010\Zadanie_ZNS_Kohonen\Zadanie_ZNS_Kohonen\obj\x64\Release\Zadanie_ZNS_Kohonen.pdb

@@ -1,0 +1,10 @@
+- neuronova siet - vykreslenie spiraly v konzole
+- predpoved pocasia - trenovacka: http://neuron.tuke.sk/~koscak/meteo/
+                    - testovacka: http://neuron.tuke.sk/~adamcak/0/graf.txt
+- fuzzy regulator
+- fuzzy kognitivnas mapa
+- evolucny algoritmus - (A1.sin(B)+C.cos(D))/(E.F)
+
+- backprop - neuron.tuke.sk/~jaksa/neural
+           - info k gcc options: http://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html
+                                 http://www.linuxjournal.com/article/7269 

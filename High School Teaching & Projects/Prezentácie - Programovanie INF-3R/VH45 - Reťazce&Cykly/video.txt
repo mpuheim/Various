@@ -1,0 +1,8 @@
+- Python Strings @ Socratica with Ulka Simone Mohanty
+https://youtu.be/iAzShkKzpJo
+
+- Iterating over a Python String @ Python Strings Tutorial with John Philip Jones
+https://youtu.be/bksva-y5HzQ
+
+- Indexing Over a Python String @ Python Strings Tutorial with John Philip Jones
+https://youtu.be/fIQ0zyCr-Kk

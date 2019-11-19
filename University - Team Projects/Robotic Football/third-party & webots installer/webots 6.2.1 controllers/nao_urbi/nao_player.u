@@ -1,0 +1,210 @@
+
+
+load ("move-patterns.u");
+
+
+# Walk for the Nao
+# step_nb: number of step the nao should do
+function robot.walk (step_nb)
+{
+  WalkPattern1.walk (step_nb, 400ms);
+},
+
+function robot.turn (step_nb)
+{
+  TurnPattern1.turn (step_nb, 1300ms);
+},
+
+# example of use of the keyboard
+at (global.key == global.letter_i) {
+  echo ("key 'i' pressed"),
+},
+
+###################################
+# Example of use of the eyes leds #
+###################################
+
+# Useful functions to set some values on the eyes
+function rval (r) { return r * 256 * 256; };
+function gval (g) { return g * 256; };
+function bval (b) { return b; };
+
+function rgbval (r, g, b) {
+    var r = rval(r);
+    var g = gval(g);
+    var b = bval(b);
+    return r + g + b;
+};
+
+function randomRgbVal () {
+    var r = random (256);
+    var g = random (256);
+    var b = random (256);
+    var ret = rgbval (r, g, b);
+    return ret;
+};
+
+# Eyes with random color:
+freeze random_color_eyes;
+random_color_eyes:loop { LEyeLed.val = randomRgbVal () & REyeLed.val = randomRgbVal () },
+
+# Angry Nao:
+freeze angry_nao;
+angry_nao:loop {  {
+        LEyeLed.val = rval (255)
+        & REyeLed.val = rval (255)
+        & chestRGB.val = 1
+    }
+    | wait(1s)
+    | {
+        LEyeLed.val = 0
+        & REyeLed.val = 0
+        & chestRGB.val = 0
+    }
+    | wait(1s),
+},
+
+
+unfreeze angry_nao;
+# unfreeze random_color_eyes
+
+
+##############################
+# Try to search for the ball #
+##############################
+
+# Create the device used for ball tracking
+ball = new colormap("camera.ycbcr",0, 255, 50, 90, 160,210, 0.0000015);
+var ball.a = 50;
+
+# Freeze the code before launching it
+freeze findball;
+
+findball:{
+
+    # Rotate the head to find the ball
+    function searchBall () {
+      HeadYaw.val = 0 sin:1s ampli:60 &
+      HeadPitch.val = 22 sin:1s ampli:22 &
+      # and turn also when the ball is not found for 2 secs
+      loop { wait (2s) | robot.turn (1) },
+    };
+
+    # when the ball is visible
+    at (ball.visible) {
+      # stop the search for the ball
+      stop searchball;
+    } onleave {
+      # if the ball is not visible anymore
+      # relaunch the search
+      searchball << searchBall (),
+    },
+
+    # launch the search
+    searchball << searchBall (),
+
+    # When the ball is visible, turn the head of the Nao toward the ball
+    whenever (ball.visible) {
+      HeadYaw.val = HeadYaw.val + ball.x * camera.xfov * ball.a;
+      HeadPitch.val = HeadPitch.val - ball.y * camera.yfov * ball.a;
+
+      # Turn the robot toward the ball
+      if (abs (HeadYaw.val) >= 30) {
+        robot.turn (round(HeadYaw.val / 30 - 0.5));
+      }
+      else {
+        # walk toward the ball
+        if (ball.ratio < 0.01) robot.walk(2),
+      },
+    },
+
+},
+
+demo:{
+    # Walk 10 steps then turn
+    loop { robot.walk (100) | robot.turn (3), },
+},
+
+
+///////////////////////////////////////////
+///                                     ///
+/// Receive the coordinates of the ball ///
+///                                     ///
+///////////////////////////////////////////
+
+function receiveTeamInfo()
+{
+  var list = reader.read("u8:2,u16");
+  var teamNumber = list[0];  # unsupported
+  var score = list[1];
+  var teamColour = list[2];
+
+  #echo("teams[].score     : " + score);
+  #echo("teams[].teamColour: " + teamColour);
+
+  # skip RobotInfo
+  reader.read("u16:8");
+};
+
+reader = new UBinaryReader();
+
+/// Set the receiver to receive in rawMode (it will create UBinary variables)
+receiver.rawMode = 1;
+
+/// These variable will contain the position of the ball
+var game.ballPosX;
+var game.ballPosZ;
+var game.playersPerTeam;
+
+/// Reception
+whenever (receiver.queueLength) {
+
+  # Receive in binary 
+  receiver.rawMode = 1;
+
+  var bytes = receiver.receive();
+
+  # Initialise the UBinaryReader with the received UBinary
+  var dummy = reader.set(bytes);
+
+  # Read the 4 first values in the UBinary
+  var header = reader.read("c:4");
+
+  # Compare with the GameData header.
+  if (header[0] == "RGme") {
+    #echo ("--- RoboCupGameControlData ---");
+    var list = reader.read("u32,u8:6,u16,u32");
+    var game.version           = list[0];
+    game.playersPerTeam        = list[1];
+    var game.state             = list[2];
+    var game.firstHalf         = list[3];
+    var game.kickOffTeam       = list[4];
+    var game.secondaryState    = list[5];
+    var game.dropInTeam        = list[6];  # unsupported
+    var game.dropInTime        = list[7];  # unsupported
+    var game.secsRemaining     = list[8];
+
+    #echo("version        : " + game.version);
+    #echo("playersPerTeam : " + game.playersPerTeam);
+    #echo("state          : " + game.state);
+    #echo("firstHalf      : " + game.firstHalf);
+    #echo("kickOffTeam    : " + game.kickOffTeam);
+    #echo("secondaryState : " + game.secondaryState);
+    #echo("secsRemaining  : " + game.secsRemaining);
+
+    dummy = receiveTeamInfo();
+    dummy = receiveTeamInfo();
+
+    # Webots extra: global ball position
+    # FOR TRAINING ONLY: THIS WILL BE DISABLED IN THE CONTEST MATCHES !!!
+    list = reader.read("f32:2");
+    game.ballPosX = list[0];
+    game.ballPosZ = list[1];
+
+    #echo("ballPosX       : " + game.ballPosX);
+    #echo("ballPosZ       : " + game.ballPosZ);
+  };
+
+  # Pop the data to receive the next paquet.
+  dummy = receiver.next();
+};

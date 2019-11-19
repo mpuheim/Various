@@ -1,0 +1,59 @@
+[System]
+Name='FR_Mamdani'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=15
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='chyba'
+Range=[-7 7]
+NumMFs=5
+MF1='kladna_velka':'trapmf',[-77 -70 -2.8 -1.4]
+MF2='nulova':'trimf',[-1.4 0 1.4]
+MF3='zaporna_velka':'trapmf',[1.4 2.8 70 77]
+MF4='kladna_mala':'trimf',[-2.8 -1.4 0]
+MF5='zaporna_mala':'trimf',[0 1.4 2.8]
+
+[Input2]
+Name='derivacia'
+Range=[-13 13]
+NumMFs=3
+MF1='kladna':'trapmf',[-143 -130 -4.85 0.007913]
+MF2='nulova':'trimf',[-5.192 0 5.186]
+MF3='zaporna':'trapmf',[0.1323 5.055 130 143]
+
+[Output1]
+Name='zasah'
+Range=[-105 125]
+NumMFs=7
+MF1='stredny-':'trimf',[-90.7 -33.19 24.33]
+MF2='maly-':'trimf',[-69.12 -11.58 45.88]
+MF3='nulovy':'trimf',[-47.5 10 67.5]
+MF4='maly+':'trimf',[-21.05 36.42 93.95]
+MF5='stredny+':'trimf',[-0.04757 57.45 114.8]
+MF6='velky-':'trapmf',[-288.2 -104.1 -58.3 -12.79]
+MF7='velky+':'trapmf',[31.62 78.37 124.5 308.3]
+
+[Rules]
+1 1, 6 (1) : 1
+1 2, 6 (1) : 1
+1 3, 2 (1) : 1
+4 1, 1 (1) : 1
+4 2, 2 (1) : 1
+4 3, 7 (1) : 1
+2 1, 2 (1) : 1
+2 2, 3 (1) : 1
+2 3, 4 (1) : 1
+5 1, 6 (1) : 1
+5 2, 4 (1) : 1
+5 3, 5 (1) : 1
+3 1, 4 (1) : 1
+3 2, 7 (1) : 1
+3 3, 7 (1) : 1

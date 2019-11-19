@@ -1,0 +1,59 @@
+[System]
+Name='FR_TSK'
+Type='sugeno'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=15
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='chyba'
+Range=[-7 7]
+NumMFs=5
+MF1='kladna_mala':'trimf',[-2.8 -1.4 0]
+MF2='nulova':'trimf',[-1.4 0 1.4]
+MF3='zaporna_mala':'trimf',[0 1.4 2.8]
+MF4='kladna_velka':'trapmf',[-77 -70 -2.8 -1.4]
+MF5='zaporna_velka':'trapmf',[1.4 2.8 70 77]
+
+[Input2]
+Name='derivacia'
+Range=[-13 13]
+NumMFs=3
+MF1='nulova':'trimf',[-5.193 0 5.187]
+MF2='kladna':'trapmf',[-143 -130 -4.849 0.007566]
+MF3='zaporna':'trapmf',[0.1326 5.054 130 143]
+
+[Output1]
+Name='zasah'
+Range=[0 1]
+NumMFs=7
+MF1='velky-':'constant',[-70]
+MF2='stredny-':'constant',[-30]
+MF3='maly-':'constant',[-7]
+MF4='nulovy':'constant',[10]
+MF5='velky+':'constant',[90]
+MF6='stredny+':'constant',[50]
+MF7='maly+':'constant',[27]
+
+[Rules]
+4 2, 1 (1) : 1
+4 1, 1 (1) : 1
+4 3, 3 (1) : 1
+1 2, 2 (1) : 1
+1 1, 3 (1) : 1
+1 3, 5 (1) : 1
+2 2, 3 (1) : 1
+2 1, 4 (1) : 1
+2 3, 7 (1) : 1
+3 2, 1 (1) : 1
+3 1, 7 (1) : 1
+3 3, 6 (1) : 1
+5 2, 7 (1) : 1
+5 1, 5 (1) : 1
+5 3, 5 (1) : 1

@@ -1,0 +1,42 @@
+﻿Following is the list of HTML elements you should know for the test:
+____________________________________________________________________
+
+Basic:
+- elements: !DOCTYPE, html, head, body
+- attributes: lang
+
+Header:
+- elements: title, meta
+- attributes: charset
+
+Text structure:
+- elements: h1-h6, hr, p, pre, br
+- attributes: -
+
+Text formatting:
+- elements: b/strong, i/em, small, sub, sup, ins, del, mark
+- attributes: -
+
+Quotes, comments:
+- elements: abbr, blockquote, q, <!-- comment -->
+- attributes: -
+
+Links, frames:
+- elements: a, iframe
+- attributes: href, src, title, target
+
+Images:
+- elements: img, picture
+- attributes: src, alt, width, height
+
+Tables:
+- elements: table, tr, th, td, caption
+- attributes: colspan, rowspan
+
+Lists:
+- elements: ul, ol, li
+- attributes: -
+
+Grouping:
+- elements: div, span
+- attributes: -

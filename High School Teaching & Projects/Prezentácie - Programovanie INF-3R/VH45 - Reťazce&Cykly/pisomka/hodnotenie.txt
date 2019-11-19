@@ -1,0 +1,16 @@
+﻿Hodnotenie:
+2/2b - príprava premenných
+4/4b - použitie cyklu
+2/2b - načítanie vstupu
+2/2b - výpočet výsledku
+2/2b - výpis výsledku
+--------
+spolu - 12b
+známka - 1
+--------
+Stupnica:
+1: 12-10
+2: 9-8
+3: 7-6
+4: 5-4
+5: 3-0

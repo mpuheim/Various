@@ -1,0 +1,62 @@
+<html>
+  <script>
+  
+    //Add new note to the container DIV element
+    function addnote() {
+      var container = document.getElementById("container");
+      container.innerHTML += '<textarea rows="6" cols="50" placeholder="Enter your note"></textarea><br/>';
+    }
+    
+    //Remove all notes from the container DIV element
+    function clearall() {
+      var container = document.getElementById("container");
+      container.innerHTML = "";
+    }
+  
+    //Save all notes as cookie
+    function save_cookies() {
+      var container = document.getElementById("container");
+      setCookie("container", container.innerHTML, 360);
+    }
+    
+    //Load notes from cookie
+    function load_cookies() {
+      var data = getCookie("container");
+      if (data != "") {
+          var container = document.getElementById("container");
+          container.innerHTML += data;
+      }
+    }
+
+    //Auxiliary function to create cookie
+    function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      var expires = "expires="+d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+    
+    //Auxiliary function to load cookie
+    function getCookie(cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for(var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+              c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+              return c.substring(name.length, c.length);
+          }
+      }
+      return "";
+    }
+  </script>
+  
+  <body onload="load_cookies()" onunload="save_cookies()">
+    <input type="submit" value="Add note" onclick="addnote()">
+    <input type="submit" value="Clear all" onclick="clearall()">
+    <div id="container"> <!-- HERE THE NOTES WILL BE LOADED --> </div>
+    <br/><p>Close and reopen the webpage to check proper cookie saving & loading</p>
+  </body>
+</html>

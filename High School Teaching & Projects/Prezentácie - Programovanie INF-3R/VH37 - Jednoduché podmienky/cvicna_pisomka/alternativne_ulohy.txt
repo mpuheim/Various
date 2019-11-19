@@ -1,0 +1,20 @@
+1. Write a Python program which accepts the radius of a circle from the user and compute the area.
+Example:
+  Enter circle radius: 10
+  Circle area is aproximately 314.
+
+2. Write a Python program which accepts the user's first and last name and print them in reverse order with a space between them.
+Example:
+  Enter first name: Jano
+  Enter last name: Bednar
+  Your name is Bednar Jano.
+
+3. Write a Python program to accept a filename from the user and print the extension of that (last 3 letters).
+Example:
+  Enter filename: program.exe
+  File extension is "exe".
+
+4. Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn.
+Example:
+  Value of n is: 5
+  n+nn+nnn = 5+55+555 = 615

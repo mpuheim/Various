@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type='text/javascript'>
+  
+    var mark="X";
+    function drawMark(cell){
+      if (cell.innerHTML != " ")
+        return //never redraw an existing mark
+      if (mark=="X") {
+        cell.innerHTML = "X";
+        mark = "0";
+      } else {
+        cell.innerHTML = "0";
+        mark = "X";
+      }
+      check()
+    }
+    
+    function check(){   
+      /*
+         grid indices:
+                        0 1 2
+                        3 4 5
+                        6 7 8
+                
+         list indices:  [0,1,2,3,4,5,6,7,8]
+      */       
+      var td = document.getElementsByTagName("td"); //get list of table cells
+      
+      //check the first diagonal
+      if ((td[0].innerHTML != " ")&&(td[0].innerHTML == td[4].innerHTML)&&(td[4].innerHTML == td[8].innerHTML))
+        return alert("Winner: "+td[0].innerHTML)
+      
+      //check the second diagonal
+
+      //check rows
+
+      //check collumns
+
+      //check for draw (all cells filled without winner)
+      
+    }
+    
+    function reset(){
+      var td = document.getElementsByTagName("td");
+      for (i=0;i<td.length;i++) {
+        td[i].innerHTML = " ";
+      }
+    }
+    
+  </script>
+  
+  <style>
+    td {
+      text-align: center;
+      font-size: 40px;
+      width: 50px;
+      height: 50px;
+      border-style: solid;
+    }
+  </style>
+  
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td onclick="drawMark(this);"> </td>
+      <td onclick="drawMark(this);"> </td>
+      <td onclick="drawMark(this);"> </td>
+    </tr>
+    <tr>
+      <td onclick="drawMark(this);"> </td>
+      <td onclick="drawMark(this);"> </td>
+      <td onclick="drawMark(this);"> </td>
+    </tr>
+    <tr>
+      <td onclick="drawMark(this);"> </td>
+      <td onclick="drawMark(this);"> </td>
+      <td onclick="drawMark(this);"> </td>
+    </tr>
+  </table>
+  <button onclick="reset()">Reset</button>
+</body>
+
+</html>

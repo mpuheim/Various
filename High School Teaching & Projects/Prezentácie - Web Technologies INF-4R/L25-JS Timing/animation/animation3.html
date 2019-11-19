@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <script>
+  
+    var i = 0
+
+    // animate the image
+    function animate()
+    {
+        path = "bird/vtak" + i +".png";
+        document.getElementById("info").innerHTML = path;
+        document.getElementById("animation").src = path;
+        i = (i+1)%8 ;
+        setTimeout(animate,100);
+    }
+    
+    // start the animation after the page loads
+    window.onload = animate;
+    
+  </script>
+</head>
+
+<body>
+  <img id="animation" src="bird/vtak0.png">
+  <p id="info"></p>
+</body>
+
+</html> 

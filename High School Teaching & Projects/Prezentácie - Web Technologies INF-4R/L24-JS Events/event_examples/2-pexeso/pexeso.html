@@ -1,0 +1,22 @@
+<script>
+  function swap(card){
+    var display = card.getAttribute("src"); 
+    var face = card.getAttribute("alt");
+    var back = "cards/cardBack_blue1.png";
+    // turn the card
+    if (display==face){
+        card.setAttribute("src", back);
+    } else {
+        card.setAttribute("src", face);
+    }
+  }
+</script>
+
+
+<!-- Here we display some images. We use a trick where we store the path to the image in its alt attribute -->
+<img onclick="swap(this)" src="cards/cardBack_blue1.png" alt="cards/cardSpadesK.png">
+<img onclick="swap(this)" src="cards/cardBack_blue1.png" alt="cards/cardDiamondsK.png">
+<img onclick="swap(this)" src="cards/cardBack_blue1.png" alt="cards/cardSpadesA.png">
+<img onclick="swap(this)" src="cards/cardBack_blue1.png" alt="cards/cardSpadesK.png">
+<img onclick="swap(this)" src="cards/cardBack_blue1.png" alt="cards/cardDiamondsK.png">
+<img onclick="swap(this)" src="cards/cardBack_blue1.png" alt="cards/cardSpadesA.png">

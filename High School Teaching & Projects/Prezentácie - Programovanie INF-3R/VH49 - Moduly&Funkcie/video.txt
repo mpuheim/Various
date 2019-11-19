@@ -1,0 +1,11 @@
+1 - Python Interactive Help @ Socratica with Ulka Simone Mohanty
+https://youtu.be/BVXv0-1Rcc8
+
+2 - Datetime Module @ Socratica with Ulka Simone Mohanty
+https://youtu.be/RjMbCUpvIgw
+
+3 - Random Number Generator @ Socratica with Ulka Simone Mohanty
+https://youtu.be/zWL3z7NMqAs
+
+4 - OS Module @ Python 3 Programming Tutorial with Sentdex
+https://youtu.be/wgHeTJtth0w
