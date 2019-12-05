@@ -7,8 +7,13 @@ Presentation of camera feed made for the laboratory of Center for Intelligent Te
 12 pieces of VIVOTEK Network Cameras (Series 7000/8000/9000) - installed and running on the local network
 
 ## Usage:
+
 1. Edit the mossaic.html file to set IP adresses of your cameras
 2. Open the page in your browser to observe the video streams
+
+## Example
+
+![example usage](https://github.com/mpuheim/Various/tree/master/University%20-%20Individual%20Projects/PhD%20-%20IoT-Mossaic/example.png)
 
 ## Author
 
