@@ -1,0 +1,223 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>IoT Mossaic</title>
+  <meta name="description" content="IoT Mossaic">
+  <meta name="author" content="Michal Puheim">
+  <meta name="copyright"content="© 2016 Michal Puheim">
+
+  <style media="screen" type="text/css">
+    #container {
+        position: relative;
+        float: left;
+        overflow: hidden;
+        width: 100%;
+    }
+    #left {
+        float: left;
+        overflow: hidden;
+        width: 12%;
+        border: 1px solid white;
+    }
+    #center{
+        float: left;
+        overflow: hidden;
+        width: 74%;
+        border: 1px solid white;
+    }
+    #right {
+        float: left;
+        overflow: hidden;
+        width: 12%;
+        border: 1px solid white;
+    }
+    #controlbox {
+        position: absolute;
+        bottom: 2%;
+        left: 1%;
+        width: 10%;
+    }
+    table, th, td {
+        margin: 0;
+        padding: 0;
+        border-spacing: 0;
+        border-collapse: collapse;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+        border: 1px solid white;
+    }
+  </style>
+  
+  <script>
+    //camera IP addresses (Note: This has to be set according to the current situation)
+    var cam1  = "XXX.XXX.XXX.001"
+    var cam2  = "XXX.XXX.XXX.002"
+    var cam3  = "XXX.XXX.XXX.003"
+    var cam4  = "XXX.XXX.XXX.004"
+    var cam5  = "XXX.XXX.XXX.005"
+    var cam6  = "XXX.XXX.XXX.006"
+    var cam7  = "XXX.XXX.XXX.007"
+    var cam8  = "XXX.XXX.XXX.008"
+    var cam9  = "XXX.XXX.XXX.009"
+    var cam10 = "XXX.XXX.XXX.010"
+    var cam11 = "XXX.XXX.XXX.011"
+    var cam12 = "XXX.XXX.XXX.012"
+    //central camera
+    var camMain = cam5
+    //refresh speed
+    var fps = 1
+    var speed = (1000/fps|0)
+    //list of unresponsive cams
+    var unresponsive = []
+    var reset_counter = 100
+    
+    function handleError(element,cam)
+    {
+        if (unresponsive.indexOf(cam) == -1)
+            unresponsive.push(cam);
+        element.setAttribute("src", "img/error.png");
+    }
+    
+    function imgToCenter(cam)
+    {
+        var element = document.getElementById("mainimg");
+        var url = "http://" + cam + "/cgi-bin/viewer/video.jpg?streamid=0&t=" + (new Date()).getTime();
+        element.setAttribute("src", url);
+        camMain = cam;
+        showControls();
+    }
+    
+    function refresh(element,cam,resolution)
+    {
+        if (unresponsive.indexOf(cam) == -1)
+        {
+            cam = cam || camMain;
+            resolution = resolution || "1280x800";
+            setTimeout(redraw(element,cam,resolution),speed);
+        }
+        reset_counter = reset_counter - 1
+        if (reset_counter < 0)
+        {
+            reset_counter = 100 * unresponsive.length;
+            unresponsive = [];
+        }
+    }
+    
+    function redraw(element,cam,resolution)
+    {
+        var url = "http://" + cam + "/cgi-bin/viewer/video.jpg?streamid=0&resolution=" + resolution + "&t=" + (new Date()).getTime();
+        element.setAttribute("src", url);
+    }
+    
+    function move(cam,direction)
+    {
+        var url = "http://" + cam + "/cgi-bin/camctrl/camctrl.cgi?channel=0&camid=1&move=" + direction;
+        //url = http://XXX.XXX.XXX.XXX/cgi-bin/camctrl/camctrl.cgi?channel=0&camid=1&move=home
+        request(url);
+    }
+    
+    function request(url, success, failure)
+    {
+      var request = makeHttpObject();
+      request.open("GET", url, true);
+      request.send(null);
+      request.onreadystatechange = function()
+      {
+        if (request.readyState == 4)
+        {
+          if (request.status == 200)
+            success(request.responseText);
+          else if (failure)
+            failure(request.status, request.statusText);
+        }
+      }
+      document.getElementById("deb").innerHTML = request.responseText;
+    }
+    
+    function makeHttpObject()
+    {
+      try {return new XMLHttpRequest();}
+      catch (error) {}
+      try {return new ActiveXObject("Msxml2.XMLHTTP");}
+      catch (error) {}
+      try {return new ActiveXObject("Microsoft.XMLHTTP");}
+      catch (error) {}
+      throw new Error("Could not create HTTP request object.");
+    }
+    
+    function hideControls()
+    {
+        document.getElementById("controlbox").style.visibility = "hidden";
+    }
+    
+    function showControls()
+    {
+        document.getElementById("controlbox").style.visibility = "visible";
+    }
+    
+  </script>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <script src="js/scripts.js"></script>
+  
+  <div id="container">
+      <div id="left">
+          <div><img src="img/error.png" onclick='imgToCenter(cam1)' onload='refresh(this,cam1,"320x200")' onerror='handleError(this,cam1)' /></div>
+          <div><img src="img/error.png" onclick='imgToCenter(cam2)' onload='refresh(this,cam2,"320x200")' onerror='handleError(this,cam2)' /></div>
+          <div><img src="img/error.png" onclick='imgToCenter(cam3)' onload='refresh(this,cam3,"320x200")' onerror='handleError(this,cam3)' /></div>
+          <div><img src="img/error.png" onclick='imgToCenter(cam4)' onload='refresh(this,cam4,"320x200")' onerror='handleError(this,cam4)' /></div>
+          <div><img src="img/error.png" onclick='imgToCenter(cam5)' onload='refresh(this,cam5,"320x200")' onerror='handleError(this,cam5)' /></div>
+          <div><img src="img/error.png" onclick='imgToCenter(cam6)' onload='refresh(this,cam6,"320x200")' onerror='handleError(this,cam6)' /></div>
+      </div>
+
+      <div id="center">
+        <div id="container">
+            <div>
+                <img id="mainimg" src="img/error.png" onload='refresh(this,camMain,"1280x800")' onerror='handleError(this,camMain); hideControls();' />
+            </div>
+            <div id="controlbox">
+                <table>
+                  <tr>
+                    <td></td>
+                    <td><img src="img/up.png" onclick='move(camMain,"up")'/></td> 
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><img src="img/left.png" onclick='move(camMain,"left")'/></td>
+                    <td><img src="img/home.png" onclick='move(camMain,"home")'/></td> 
+                    <td><img src="img/right.png" onclick='move(camMain,"right")'/></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td><img src="img/down.png" onclick='move(camMain,"down")'/></td> 
+                    <td></td>
+                  </tr>
+                </table>  
+            </div>
+        </div>
+      </div>
+
+      <div id="right">        
+          <div><img src="img/error.png" onclick='imgToCenter(cam7) ' onload='refresh(this,cam7 ,"320x200")' onerror='handleError(this,cam7 )' /></div>
+          <div><img src="img/error.png" onclick='imgToCenter(cam8) ' onload='refresh(this,cam8 ,"320x200")' onerror='handleError(this,cam8 )' /></div>
+          <div><img src="img/error.png" onclick='imgToCenter(cam9) ' onload='refresh(this,cam9 ,"320x200")' onerror='handleError(this,cam9 )' /></div>
+          <div><img src="img/error.png" onclick='imgToCenter(cam10)' onload='refresh(this,cam10,"320x200")' onerror='handleError(this,cam10)' /></div>
+          <div><img src="img/error.png" onclick='imgToCenter(cam11)' onload='refresh(this,cam11,"320x200")' onerror='handleError(this,cam11)' /></div>
+          <div><img src="img/error.png" onclick='imgToCenter(cam12)' onload='refresh(this,cam12,"320x200")' onerror='handleError(this,cam12)' /></div>
+      </div>
+  </div>
+  
+</body>
+</html>
