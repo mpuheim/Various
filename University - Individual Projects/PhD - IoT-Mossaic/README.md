@@ -2,14 +2,15 @@
 
 Presentation of camera feed made for the laboratory of Center for Intelligent Technologies, KKUI, FEI, TUKE
 
-## Requirements:
+## Requirements
 
 12 pieces of VIVOTEK Network Cameras (Series 7000/8000/9000) - installed and running on the local network
 
-## Usage:
+## Usage
 
-1. Edit the mossaic.html file to set IP adresses of your cameras
-2. Open the page in your browser to observe the video streams
+1. Edit the mossaic.html file to set IP adresses of your cameras.
+2. Open the page in your browser to observe the video streams.
+3. Click on thumbnails on sides to center that image.
 
 ## Example
 
