@@ -13,7 +13,7 @@ Presentation of camera feed made for the laboratory of Center for Intelligent Te
 
 ## Example
 
-![example usage](https://github.com/mpuheim/Various/tree/master/University%20-%20Individual%20Projects/PhD%20-%20IoT-Mossaic/example.png)
+![example usage](example.png)
 
 ## Author
 
