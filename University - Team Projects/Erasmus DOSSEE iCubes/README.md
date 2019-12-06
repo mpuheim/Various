@@ -6,5 +6,8 @@ novel human-computer interface using computer vision. (Graz-Kapfenberg, Austria,
 
 Team project repository: https://github.com/silkeostermann/iCube/
 
-My personal presentation:
+## Presentation
+
+My part starts at 6:35 and includes thorough description of the recoginition algorithm.
+
 [![presentation](https://img.youtube.com/vi/VPSaAinH_WY/0.jpg)](https://youtu.be/VPSaAinH_WY?t=395)
