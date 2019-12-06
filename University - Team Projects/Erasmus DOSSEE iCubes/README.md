@@ -8,6 +8,6 @@ Team project repository: https://github.com/silkeostermann/iCube/
 
 ## Presentation
 
-My part starts at 6:35 and includes thorough description of the recoginition algorithm.
+My part starts at 6:35 and covers the implementation of the recognition algorithm.
 
-[![presentation](https://img.youtube.com/vi/VPSaAinH_WY/0.jpg)](https://youtu.be/VPSaAinH_WY?t=395)
+[![https://youtu.be/VPSaAinH_WY?t=395](https://img.youtube.com/vi/VPSaAinH_WY/0.jpg)](https://youtu.be/VPSaAinH_WY?t=395)
