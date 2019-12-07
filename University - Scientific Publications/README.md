@@ -1,7 +1,7 @@
 # University Scientific Publications
 This is the list of the most important publications produced during my PhD studies.
 
-Complete listing from library of Technical University of Košice is available [here](https://epc.lib.tuke.sk/EvidPublQ.aspx?rok=9999&priezv=Puheim&meno=Michal).
+Complete listing from the library of Technical University of Košice can be found [here](https://epc.lib.tuke.sk/EvidPublQ.aspx?rok=9999&priezv=Puheim&meno=Michal).
 
 ## Authors
 
