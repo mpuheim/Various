@@ -1,7 +1,7 @@
 # Generic Neural Network Example
 Simple example program created to demonstrate basic principles of feed-forward artificial neural networks
 
-More information: [presentation from university exercise](docs/cviko11.pdf)
+More information: [presentation from university exercise](Generic%20Neural%20Network/docs/cviko11.pdf)
 
 ## Author
 
