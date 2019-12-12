@@ -1,0 +1,1 @@
+Multispektrálne satelitné dáta so 6 atribútmi klasifikované do 7 tried.

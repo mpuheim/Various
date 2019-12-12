@@ -1,0 +1,32 @@
+﻿Build started 2.12.2013 18:40:27.
+     1>Project "E:\Data\Programming\Generic Neural Network\konvertor\build-sys-windows-amd64\konvertor_start.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "konvertor_start.dir\Release\konvertor_start.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         All outputs are up-to-date.
+       ClCompile:
+         d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"konvertor_start.dir\Release\\" /Fd"E:/Data/Programming/Generic Neural Network/konvertor/build-sys-windows-amd64/sdk/bin/konvertor_start.pdb" /Gd /TP /analyze- /errorReport:prompt ..\main.cpp  /Zm1000 
+         main.cpp
+     1>..\main.cpp(9): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>..\main.cpp(16): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>..\main.cpp(77): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>..\main.cpp(84): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>..\main.cpp(112): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+       Link:
+         d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Data\Programming\Generic Neural Network\konvertor\build-sys-windows-amd64\sdk\bin\konvertor_start.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"konvertor_start.dir\Release\konvertor_start.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"E:/Data/Programming/Generic Neural Network/konvertor/build-sys-windows-amd64/sdk/bin/konvertor_start.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/Data/Programming/Generic Neural Network/konvertor/build-sys-windows-amd64/Release/konvertor_start.lib" /MACHINE:X86 konvertor_start.dir\Release\main.obj  /machine:X86 
+         konvertor_start.vcxproj -> E:\Data\Programming\Generic Neural Network\konvertor\build-sys-windows-amd64\sdk\bin\konvertor_start.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\Data\Programming\Generic Neural Network\konvertor\build-sys-windows-amd64\sdk\bin\konvertor_start.exe;#1" /manifest konvertor_start.dir\Release\konvertor_start.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "konvertor_start.dir\Release\konvertor_start.unsuccessfulbuild".
+         Touching "konvertor_start.dir\Release\konvertor_start.lastbuildstate".
+     1>Done Building Project "E:\Data\Programming\Generic Neural Network\konvertor\build-sys-windows-amd64\konvertor_start.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.66

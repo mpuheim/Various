@@ -1,0 +1,25 @@
+﻿Build started 2.12.2013 18:40:45.
+     1>Project "E:\Data\Programming\Generic Neural Network\ann\build-sys-windows-amd64\src\ann_start.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "ann_start.dir\Release\ann_start.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         All outputs are up-to-date.
+       ClCompile:
+         d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"E:/Data/Programming/Generic Neural Network/ann/src/ann" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"ann_start.dir\Release\\" /Fd"E:/Data/Programming/Generic Neural Network/ann/build-sys-windows-amd64/sdk/bin/ann_start.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\src\main.cpp  /Zm1000 
+         main.cpp
+       Link:
+         d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Data\Programming\Generic Neural Network\ann\build-sys-windows-amd64\sdk\bin\ann_start.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"ann_start.dir\Release\ann_start.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"E:/Data/Programming/Generic Neural Network/ann/build-sys-windows-amd64/sdk/bin/ann_start.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/Data/Programming/Generic Neural Network/ann/build-sys-windows-amd64/src/Release/ann_start.lib" /MACHINE:X86 ann_start.dir\Release\main.obj
+         ann_start.dir\Release\auxiliary.obj
+         ann_start.dir\Release\neuralnet.obj
+         ann_start.dir\Release\timer.obj  /machine:X86 
+         ann_start.vcxproj -> E:\Data\Programming\Generic Neural Network\ann\build-sys-windows-amd64\sdk\bin\ann_start.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\Data\Programming\Generic Neural Network\ann\build-sys-windows-amd64\sdk\bin\ann_start.exe;#1" /manifest ann_start.dir\Release\ann_start.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "ann_start.dir\Release\ann_start.unsuccessfulbuild".
+         Touching "ann_start.dir\Release\ann_start.lastbuildstate".
+     1>Done Building Project "E:\Data\Programming\Generic Neural Network\ann\build-sys-windows-amd64\src\ann_start.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.53
