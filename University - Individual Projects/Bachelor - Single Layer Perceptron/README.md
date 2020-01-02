@@ -4,9 +4,8 @@ Jednoduchá jednovrstvová umelá neurónová sieť schopná lineárne separova�
 
 Bližšie informácie o programe:
 
-- [Zadanie - Perceptron.pdf](Zadanie - Perceptron.pdf)
+- [Zadanie - Perceptron.pdf](Zadanie%20-%20Perceptron.pdf)
 
-- [Zadanie - Perceptron.pdf](Zadanie - Perceptron.pdf)
 
 ## Author
 
